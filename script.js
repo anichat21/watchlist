@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const addStockButton = document.getElementById('add-stock-button');
     const watchlistElement = document.getElementById('watchlist');
     const stockDetailsElement = document.getElementById('stock-details');
+    const menuIcon = document.getElementById('menu-icon');
+    const sidebar = document.getElementById('watchlist-sidebar');
 
     // Load watchlist from local storage
     let watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
@@ -54,5 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>Change: ${data.change}%</p>
         `;
     }
-});
 
+    // Toggle sidebar for mobile view
+    menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+    });
+});
