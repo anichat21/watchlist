@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple stock watchlist PWA">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="script.js"></script>
+    <title>Stock Watchlist App</title>
+</head>
+<body>
+    <header>
+        <h1>Stock Watchlist</h1>
+    </header>
+    
+    <main>
+        <section id="search-section">
+            <input type="text" id="stock-input" placeholder="Enter stock symbol...">
+            <button id="add-stock-button">Add Stock</button>
+        </section>
+        
+        <section id="watchlist-section">
+            <h2>Your Watchlist</h2>
+            <ul id="watchlist"></ul>
+        </section>
+
+        <section id="stock-data-section">
+            <h2>Stock Details</h2>
+            <div id="stock-details"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stock Watchlist PWA</p>
+    </footer>
+</body>
+</html>
