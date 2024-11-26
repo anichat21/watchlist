@@ -1,1 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+#search-section {
+    margin: 1em;
+}
+
+#stock-input {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+#add-stock-button {
+    padding: 0.6em;
+    font-size: 1em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+#watchlist-section {
+    width: 80%;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+
+#watchlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+#watchlist li {
+    padding: 0.5em;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#stock-data-section {
+    width: 80%;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
 
